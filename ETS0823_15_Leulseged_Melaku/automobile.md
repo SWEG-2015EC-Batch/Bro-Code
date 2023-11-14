@@ -1,6 +1,0 @@
-input -> the capacity of the car tank in gallons
-      -> the miles per gallons the automobile can be driven
-
-opreation -> the amount of miles the automobilie can be driven = capacity * miles per gallons
-
-output -> the amount of miles the cutomobile can be driven
