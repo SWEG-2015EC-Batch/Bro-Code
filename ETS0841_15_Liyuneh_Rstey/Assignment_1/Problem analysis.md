@@ -173,7 +173,7 @@ pseudo code
 5. print time taken
 6. end
    flow chart
-   ```mermaid
+```mermaid
 graph LR;
 id1([Start]);
 id3(characterPersecond = 960);
