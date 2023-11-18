@@ -3,6 +3,12 @@
 input-- height and weight
 operation-- BMI= weight/(heght*height)
 output---- BMI of the person
+pseudo code
+1.start
+2. input height and weight
+3. BMI= weight/(height*height)
+4. print BMI
+5. end
 2-> 
 input-- the capacity of a gallon, miles per gallon
 operation-- tank moves with out refuling = the capacity of gallon *miles per gallon
