@@ -50,6 +50,16 @@ operations--- bonusPayment= bonusRatePerHour*weeklyWorkingHour
               pensionPayment= grossSalary*pensionRate
               netSalary= grossSalary-(taxPayment+pensionPayment)
 output----- bonusPayment, grossSsalary, taxPayment, pensionPayment, netSalary
+pseudo code
+1. start
+2. input bonusRatePerHour, weeklyWorkingHour, baseSalary, taxRate= 0.15, pensionRate= 0.05
+3. bonusPayment= bonusRatePerHour*weeklyWorkingHour
+4. grossSalary= bonusPayment+baseSalary
+5. taxPayment= grossSalary*taxRate
+6. pensionPayment= grossSalary*pensionRate
+7. netSalary= grossSalary- (taxPayment+pensionPayment)
+8. print bonusPayment, grossSalary, netSalary
+9. end
 6->
 input--- characters per second = 960 bytes/second, and  the given charcter 400MB
 operation-- time taken = given charcter/ charcter per second
