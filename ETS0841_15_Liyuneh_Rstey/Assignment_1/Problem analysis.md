@@ -68,8 +68,8 @@ output--- time taken to move the file
 pseudo code
 1. start
 2. charcterPersecond= 960 bytes/second
-3. input size of character
-4. time taken= size of character/ charcter per second
+3. input file size
+4. time taken= file size/ charcter per second
 5. print time taken
 6. end
           
