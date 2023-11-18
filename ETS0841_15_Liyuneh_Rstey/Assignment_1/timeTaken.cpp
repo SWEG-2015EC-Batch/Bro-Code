@@ -5,8 +5,11 @@ using namespace std;
 int main()
 {
     double characterPerSecond= 960 ;
-    double characterAmount= 400000000 ;
-    double time= characterAmount/characterPerSecond;
-    cout<<"the time taken is "<<time<<"bytes/second"<<endl;;
+   
+    double sizeOfFile, time;
+     cout<<"Enter the size of the file: ";
+    cin>>sizeOfFile;
+    time= sizeOfFile/characterPerSecond;
+    cout<<"the time taken is "<<time<<"second"<<endl;
     return 0;
 }
