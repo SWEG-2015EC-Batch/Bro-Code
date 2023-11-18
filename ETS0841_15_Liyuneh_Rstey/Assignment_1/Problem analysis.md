@@ -64,6 +64,10 @@ pseudo code
 6->
 input--- characters per second = 960 bytes/second, and  the given charcter 400MB
 operation-- time taken = given charcter/ charcter per second
-output--- time taken to move the file 
+output--- time taken to move the file
+pseudo code
+1. start
+2. charcterPersecond= 960 bytes/second
+3. input 
           
 
