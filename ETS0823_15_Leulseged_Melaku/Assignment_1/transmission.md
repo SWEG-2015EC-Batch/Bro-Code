@@ -14,7 +14,6 @@ psedcode
 
 
 flowchart
-flowchart
 ```mermaid
     flowchart TD;
     A([start])-->B[/input file size/];
