@@ -35,6 +35,12 @@ pseudo code
 input---- value of x and y
 operation--- value of x raised to y
 output---- number which is the result of x raised to y
+pseudo code
+1. start
+2. input value of x and y
+3. x raised to y
+4. print result
+5. end
 5->
 // calculating gross salary, bonus payment, and netsalary
 input-- bonusRatePerHour, weeklyWorkingHour, baseSalary, taxRate=0.15, pensionRate=0.05
