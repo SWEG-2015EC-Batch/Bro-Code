@@ -13,6 +13,12 @@ pseudo code
 input-- the capacity of a gallon, miles per gallon
 operation-- tank moves with out refuling = the capacity of gallon *miles per gallon
 output-- the total distance moved by a tank with out refuling
+pseudo code
+1. start
+2. input the capacity in gallon and miles per gallon
+3. distance= miles per gallon*capacity in gallon
+4. print distance
+5. end
 3->
 input-- a letter
 operation--- change the letter to upper case if it is lower or to lower if it is upper
