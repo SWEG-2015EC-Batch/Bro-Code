@@ -1,6 +1,7 @@
 // print grossSalary, netSalary, bonusPayment
 
 #include<iostream>
+#include<string>
 using namespace std;
 int main()
 {
@@ -9,7 +10,10 @@ int main()
     double baseSalary;
     double weeklyWorkingHour;
     double bonusRatePerHour;
+    string name;
     cout<<"calculating  salaries \n";
+    cout<<"Enter the employee name \n";
+    cin>>name;
     cout<<"Enter base salary: \n";
     cin>>baseSalary;
     cout<<"Enter weekkly working hour: \n";
@@ -22,7 +26,7 @@ int main()
     double taxPayment= TaxRate*grossSalary;
     double pensionPayment= PensionRate*grossSalary;
     double netSalary= grossSalary- (taxPayment+ pensionPayment);
-    cout<<"bonus payment= $"<<bonusPayment<<endl<<"grossSalary= $"<<grossSalary<<endl<<"taxPayment= $"<<taxPayment<<endl<<"pensionPayment= $"<<pensionPayment<<endl<<"netsalary= $"<<netSalary;
+    cout<<"the total process for  "<<name<<endl<<"bonus payment= $"<<bonusPayment<<endl<<"grossSalary= $"<<grossSalary<<endl <<"netsalary= $"<<netSalary;
     return 0;
     
 }
