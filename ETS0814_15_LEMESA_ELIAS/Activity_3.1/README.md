@@ -83,6 +83,7 @@ Output: "The final result is: " + witet
 
 
 flowchart TD;
+``` mermaid
   A([Initialize variables])-->B[/Enter the first kutir/];
   B-->C["Start loop until '0' is entered:"];
   C-->D["Enter operation (+, -, *, /, =, 0):"];
