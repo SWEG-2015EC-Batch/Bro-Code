@@ -82,8 +82,9 @@ Display the final result:
 Output: "The final result is: " + witet
 
 
-flowchart TD;
+
 ``` mermaid
+flowchart TD;
   A([Initialize variables])-->B[Enter first kutir];
   B-->C[Start loop until '0' is entered];
   C-->D[Enter operation (+, -, *, /, =, 0)];
