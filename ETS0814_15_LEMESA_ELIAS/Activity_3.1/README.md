@@ -82,6 +82,6 @@ Output: "The final result is: " + witet
 
 ##flowchart
 
-![Flowchart](ETS0814_15_LEMESA_ELIAS/Activity_3.1/mermaid-diagram-2023-12-04-221949.png
+![Flowchart](ETS0814_15_LEMESA_ELIAS/Activity_3.1/mermaid-diagram-2023-12-04-221949.png)
 
 
