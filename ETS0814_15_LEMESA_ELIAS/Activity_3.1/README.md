@@ -78,16 +78,10 @@ Exit the inner loop if operation is '0'.
 Continue the outer loop while operation is not '0'.
 
 Display the final result:
-
 Output: "The final result is: " + witet
+
 ##flowchart
+
 ![Flowchart](ETS0814_15_LEMESA_ELIAS/Activity_3.1/mermaid-diagram-2023-12-04-221949.png)
 
 
-
-  N-->P[Display: 'Division by zero is Undefined.'];
-  J-->Q[Display: 'Enter a valid operation'];
-  D-->R[Exit outer loop];
-  C-->B;
-  R-->S[Display: 'The final result is: ' + wite];
-```
