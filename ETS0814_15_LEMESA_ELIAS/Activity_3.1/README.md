@@ -84,23 +84,24 @@ Output: "The final result is: " + witet
 
 flowchart TD;
 ``` mermaid
-  A([Initialize variables])-->B[/Enter the first kutir/];
-  B-->C["Start loop until '0' is entered:"];
-  C-->D["Enter operation (+, -, *, /, =, 0):"];
-  D-->E([Exit loop if '0' is entered]);
-  D-->F["Display current result if '=' is entered:"];
-  F-->G["Display: 'Current result is: ' + witet"];
-  D-->H["Prompt user to enter next kutir:"];
-  H-->I[/Enter the next kutir/];
-  I-->J["Switch on operation:"];
-  J-->K["Perform addition: witet += kutir"];
-  J-->L["Perform subtraction: witet -= kutir"];
-  J-->M["Perform multiplication: witet *= kutir"];
-  J-->N["Check for division by zero:"];
-  N-->O["Perform division: witet /= kutir"];
-  N-->P["Display: 'Division by zero is Undefined.'"];
-  J-->Q["Display: 'Enter a valid operation'"];
-  D-->R([Exit outer loop]);
-  C-->B;
-  R-->S["Display: 'The final result is: ' + witet"];
+  A([Initialize variables])-->B[Enter first kutir];
+  B-->C[Start loop until '0' is entered];
+  C-->D[Enter operation (+, -, *, /, =, 0)];
+  D-->|0| E[Exit loop if '0' is entered];
+  D-->|=| F[Display current result if '=' is entered];
+  F-->G[Display: 'Current result is: ' + witet];
+  D-->|+, -, *, /| H[Prompt user to enter next kutir];
+  H-->I[Enter next kutir];
+  I-->J[Switch on operation];
+  J-->|+| K[Perform addition: witet += kutir];
+  J-->|-| L[Perform subtraction: witet -= kutir];
+  J-->|*| M[Perform multiplication: witet *= kutir];
+  J-->|/| N[Check for division by zero];
+  N-->|Not 0| O[Perform division: witet /= kutir];
+  N-->|0| P[Display: 'Division by zero is Undefined.'];
+  J-->|Default| Q[Display: 'Enter a valid operation'];
+  D-->|0| R[Exit outer loop];
+  C-->|Loop| B;
+  R-->S[Display: 'The final result is: ' + witet];
+l result is: ' + witet"];
 ```
