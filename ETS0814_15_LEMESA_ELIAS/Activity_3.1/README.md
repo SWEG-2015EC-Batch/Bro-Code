@@ -80,25 +80,11 @@ Continue the outer loop while operation is not '0'.
 Display the final result:
 
 Output: "The final result is: " + witet
+##flowchart
+![Flowchart](ETS0814_15_LEMESA_ELIAS/Activity_3.1/mermaid-diagram-2023-12-04-221949.png)
 
 
 
-``` mermaid
-      flowchart TD;
-  A([Start])-->B[Enter first kutir];
-  B-->C[Start loop until '0' is entered];
-  C-->D[Enter operation (+, -, *, /, =, 0)];
-  D-->E[Exit loop if '0' is entered];
-  D-->F[Display current result if '=' is entered];
-  F-->G[Display: 'Current result is: ' + witet];
-  D-->H[Prompt user to enter next kutir];
-  H-->I[Enter next kutir];
-  I-->J[Switch on operation];
-  J-->K[Perform addition: witet += kutir];
-  J-->L[Perform subtraction: witet -= kutir];
-  J-->M[Perform multiplication: witet *= kutir];
-  J-->N[Check for division by zero];
-  N-->O[Perform division: witet /= kutir];
   N-->P[Display: 'Division by zero is Undefined.'];
   J-->Q[Display: 'Enter a valid operation'];
   D-->R[Exit outer loop];
