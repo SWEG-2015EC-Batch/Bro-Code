@@ -1,84 +1,367 @@
-#include <iostream>
-
+#include<iostream>
 using namespace std;
+int main(){
+    int condition = 1;
+    int a;
+    while(condition == 1){
+        cout<<"********************************************************\n";
+        cout<<"***                                                  ***\n";
+        cout<<"***                                                  ***\n";
+        cout<<"***       1. full rectangle pattern                  ***\n";
+        cout<<"***       2. hollolw rectangle pattern               ***\n";
+        cout<<"***       3. half pyramid pattern                    ***\n";
+        cout<<"***       4. upside-down half pyramid pattern        ***\n";
+        cout<<"***       5. hollow inverted half pyramid pattern    ***\n";
+        cout<<"***       6. full pyramid pattern                    ***\n";
+        cout<<"***       7. inverted full pyramid pattern           ***\n";
+        cout<<"***       8. hollow inverted full pyramid pattern    ***\n";
+        cout<<"***       0. exit                                    ***\n";
+        cout<<"***                                                  ***\n";
+        cout<<"***                                                  ***\n";
+        cout<<"***                                                  ***\n";
+        cout<<"********************************************************\n";
+        cout<<"===>";
 
-int main() {
-    int mainChoice;
-    int subChoice;
-    int rows;
-
-    do {
-        cout << "Select a main pattern (1-3, 0 to exit):" << endl;
-        cout << "1. Rectangle" << endl;
-        cout << "2. Half Pyramid" << endl;
-        cout << "3. Full Pyramid" << endl;
-        cout << "0. Exit" << endl;
-
-        cout << "Enter your choice: ";
-        cin >> mainChoice;
-
-        switch (mainChoice) {
-            case 1:
-                cout << "Enter number of rows and columns for the rectangle: ";
-                cin >> rows;
-                cout << "Do you want the rectangle to be hollow? (1 for yes, 0 for no): ";
-                cin >> subChoice;
-                for (int i = 1; i <= rows; ++i) {
-                    for (int j = 1; j <= rows; ++j) {
-                        if (subChoice == 1 && i > 1 && i < rows && j > 1 && j < rows) {
-                            cout << " ";
-                        } else {
-                            cout << "*";
-                        }
-                    }
-                    cout << endl;
-                }
-                break;
-            case 2:
-                cout << "Enter number of rows for the half pyramid: ";
-                cin >> rows;
-                cout << "Do you want the half pyramid to be hollow? (1 for yes, 0 for no): ";
-                cin >> subChoice;
-                for (int i = 1; i <= rows; ++i) {
-                    for (int j = 1; j <= i; ++j) {
-                        if (subChoice == 1 && i > 1 && j < i) {
-                            cout << " ";
-                        } else {
-                            cout << "*";
-                        }
-                    }
-                    cout << endl;
-                }
+        cin>>a;
+        switch (a)
+        {
+        case 0:
+            condition = 2;
+            cout<<"good bye (^~^)\n";
+            break;
+        case 1:
+            cout<<"*************************************\n";
+            cout<<"***     1.character               ***\n";
+            cout<<"***     2.number                  ***\n";
+            cout<<"***     3.asterix                 ***\n";
+            cout<<"***     4.main menu               ***\n";
+            cout<<"*************************************\n";
+            cout<<"=====>";
+            int input;
+            cin>>input;
+            switch (input)
+            {
+            case 4:
                 break;
             case 3:
-                cout << "Enter number of rows for the full pyramid: ";
-                cin >> rows;
-                cout << "Do you want the full pyramid to be hollow? (1 for yes, 0 for no): ";
-                cin >> subChoice;
-                cout << "Do you want to invert the full pyramid? (1 for yes, 0 for no): ";
-                cin >> subChoice;
-                for (int i = 1; i <= rows; ++i) {
-                    for (int j = 1; j <= rows - i; ++j) {
+                int row,column;
+                cout<<"row =>";
+                cin>>row;
+                cout<<"column =>";
+                cin>>column;
+                cout<<"\n\n";
+                for (int i=1;i<=row;i++){
+                    for (int j=1;j<=column;j++){
+                        cout<<"*";
+                    }
+                    cout<<endl;
+                }
+                cout<<"\n\n";
+                break;
+            case 2:
+                cout<<"row =>";
+                cin>>row;
+                cout<<"column =>";
+                cin>>column;
+                cout<<"\n\n";
+                for (int i=1;i<=row;i++){
+                    for (int j=1;j<=column;j++){
+                        cout<<j;
+                    }
+                    cout<<endl;
+                }
+                cout<<"\n\n";
+                break;
+            case 1:
+                cout<<"row =>";
+                cin>>row;
+                cout<<"column =>";
+                cin>>column;
+                cout<<"\n\n";
+                for (int i=0;i<row;i++){
+                    for (int j=0;j<column;j++){
+                        cout<<char('a' + j);
+                    }
+                    cout<<endl;
+                }
+                cout<<"\n\n";
+                break;
+            
+            default:
+                cout<<"invalid input\n";
+                break;
+            }
+            break;
+        case 3:
+            cout<<"*************************************\n";
+            cout<<"***     1.character               ***\n";
+            cout<<"***     2.number                  ***\n";
+            cout<<"***     3.asterix                 ***\n";
+            cout<<"***     4.main menu               ***\n";
+            cout<<"*************************************\n";
+            cout<<"=====>";
+            cin>>input;
+            switch (input)
+            {
+            case 4:
+                break;
+            case 3:
+                int row,column;
+                cout<<"row =>";
+                cin>>row;
+                cout<<"\n\n";
+                for (int i=1;i<=row;i++){
+                    for (int j=1;j<=i;j++){
+                        cout<<"*";
+                    }
+                    cout<<endl;
+                }
+                cout<<"\n\n";
+                break;
+            case 2:
+                cout<<"row =>";
+                cin>>row;
+                cout<<"\n\n";
+                for (int i=1;i<=row;i++){
+                    for (int j=1;j<=i;j++){
+                        cout<<j;
+                    }
+                    cout<<endl;
+                }
+                cout<<"\n\n";
+                break;
+            case 1:
+                cout<<"row =>";
+                cin>>row;
+                cout<<"\n\n";
+                for (int i=0;i<row;i++){
+                    for (int j=0;j<i;j++){
+                        cout<<char('a' + j);
+                    }
+                    cout<<endl;
+                }
+                cout<<"\n\n";
+                break;
+            
+            default:
+                cout<<"invalid input\n";
+                break;
+            }
+            break;
+        case 4:
+            cout<<"*************************************\n";
+            cout<<"***     1.character               ***\n";
+            cout<<"***     2.number                  ***\n";
+            cout<<"***     3.asterix                 ***\n";
+            cout<<"***     4.main menu               ***\n";
+            cout<<"*************************************\n";
+            cout<<"=====>";
+            cin>>input;
+            switch (input)
+            {
+            case 4:
+                break;
+            case 3:
+                int row,column;
+                cout<<"row =>";
+                cin>>row;
+                cout<<"\n\n";
+                for (int i=row;i>=1;i--){
+                    for (int j=1;j<=i;j++){
+                        cout<<"* ";
+                    }
+                    cout<<endl;
+                }
+                cout<<"\n\n";
+                break;
+            case 2:
+                cout<<"row =>";
+                cin>>row;
+                cout<<"\n\n";
+                for (int i=row;i>=1;i--){
+                    for (int j=1;j<=i;j++){
+                        cout<<j;
+                    }
+                    cout<<endl;
+                }
+                cout<<"\n\n";
+                break;
+            case 1:
+                cout<<"row =>";
+                cin>>row;
+                cout<<"\n\n";
+                for (int i=row;i>=0;i--){
+                    for (int j=0;j<=i;j++){
+                        cout<<char('a'+j);
+                    }
+                    cout<<endl;
+                }
+                cout<<"\n\n";
+                break;
+            
+            default:
+                cout<<"invalid input\n";
+                break;
+            }
+            break;
+        case 5:
+            cout<<"*************************************\n";
+            cout<<"***     1.asterix                 ***\n";
+            cout<<"***     2.main menu               ***\n";
+            cout<<"*************************************\n";
+            cout<<"=====>";
+            cin>>input;
+            switch (input)
+            {
+            case 2:
+                break;
+            case 1:
+                int row,column;
+                cout<<"row =>";
+                cin>>row;
+                cout<<"\n\n";
+                for (int i = 1; i <= row; ++i) {
+
+                    for (int j = 1; j < i; ++j) {
                         cout << " ";
                     }
-                    for (int k = 1; k <= 2 * i - 1; ++k) {
-                        if (subChoice == 1 && i < rows && (k > 1 && k < 2 * i - 1)) {
-                            cout << " ";
-                        } else {
+
+                    for (int k = i; k <= row; ++k) {
+                        if (i == 1 || k == i || k == row) {
                             cout << "*";
+                        } else {
+                            cout << " ";
                         }
                     }
+
+                    // Move to the next line
                     cout << endl;
                 }
+                cout<<"\n\n";
                 break;
-            case 0:
-                cout << "Exiting the program. Goodbye!" << endl;
+            
+            default:
+                cout<<"invalid input\n";
+                break;
+            }
+            break;
+        case 6:
+            int rows;
+        
+            cout << "Enter the number of rows: ";
+            cin >> rows;
+        
+            for (int i = 1; i <= rows; ++i) {
+                for (int j = 1; j <= rows - i; ++j) {
+                    cout << " ";
+                }
+        
+                for (int k = 1; k <= 2 * i - 1; ++k) {
+                    cout << "*";
+                }
+        
+                cout << endl;
+            }
+            break;
+        case 7:
+
+            cout << "Enter the number of rows: ";
+            cin >> rows;
+
+            for (int i = rows; i >= 1; --i) {
+                for (int j = 1; j <= rows - i; ++j) {
+                    cout << " ";
+                }
+
+                for (int k = 1; k <= 2 * i - 1; ++k) {
+                    cout << "*";
+                }
+
+                cout << endl;
+            }
+            break;
+        case 8:
+
+            cout << "Enter the number of rows: ";
+            cin >> rows;
+
+            for (int i = rows; i >= 1; --i) {
+                for (int j = 1; j <= rows - i; ++j) {
+                    cout << " ";
+                }
+
+                for (int k = 1; k <= 2 * i - 1; ++k) {
+                    if (k == 1 || k == 2 * i - 1 || i == rows) {
+                        cout << "*";
+                    } else {
+                        cout << " ";
+                    }
+                }
+
+                cout << endl;
+            }
+            break;
+        
+
+        case 2:
+            cout<<"*************************************\n";
+            cout<<"***     1.number                  ***\n";
+            cout<<"***     2.asterix                 ***\n";
+            cout<<"***     3.main menu               ***\n";
+            cout<<"*************************************\n";
+            cout<<"=====>";
+            cin>>input;
+            switch (input)
+            {
+            case 3:
+                break;
+            case 2:
+                int row,column;
+                cout<<"row =>";
+                cin>>row;
+                cout<<"column =>";
+                cin>>column;
+                cout<<"\n\n";
+                for (int i=0;i<row;i++){
+                    for (int j=0;j<column;j++){
+                        if (i == 0 || i == row - 1 || j == 0 || j == column - 1) {
+                            cout << "* ";
+                        } else {
+                            cout << "  ";
+                        }
+                    }
+                    cout<<endl;
+                }
+                cout<<"\n\n";
+                break;
+            case 1:
+                cout<<"row =>";
+                cin>>row;
+                cout<<"column =>";
+                cin>>column;
+                cout<<"\n\n";
+                for (int i=0;i<row;i++){
+                    for (int j=0;j<column;j++){
+                         if (i == 0 || i == row - 1 || j == 0 || j == column - 1) {
+                            cout <<j<<" ";
+                        } else {
+                            cout << "  ";
+                        }
+                    }
+                    cout<<endl;
+                }
+                cout<<"\n\n";
                 break;
             default:
-                cout << "Invalid choice. Please enter a number between 0 and 3." << endl;
+                cout<<"invalid input\n";
+                break;
+            }
+            break;
+        
+        default:
+            cout<<"invalid input\n";
+            break;
         }
-
-    } while (mainChoice != 0);
-
+    }
     return 0;
 }
