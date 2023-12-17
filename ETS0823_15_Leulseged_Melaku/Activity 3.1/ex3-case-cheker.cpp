@@ -37,4 +37,3 @@ int main(){
     }
     return 0;
 }
-//git pull origin main --no-rebase
