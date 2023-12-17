@@ -1,17 +1,22 @@
 #include <iostream>
-using namespace std;
-int main(){
-    int sum = 0, number, n, count = 1;
-    cout<< "How many numbers: ";
-    cin >> n;
-    while( count <= n){
-        cout<< "Enter a number: ";
-        cin >> number;
-        if(number % 3 != 0 && number % 7 != 0){
-            sum += number;
-        }
-    count++;
+
+int main() {
+    std::cout << "Enter an integer: ";
+    int number;
+    std::cin >> number;
+
+    int temp = number;
+    int divisor = 1;
+    while (temp >= 10) {
+        temp /= 10;
+        divisor *= 10;
     }
-    cout << sum;
+
+    // Extract the number without the first and last digits
+    int slicedNumber = (number % divisor) / 10;
+
+    std::cout << "Original number: " << number << std::endl;
+    std::cout << "Number without the first and last digits: " << slicedNumber << std::endl;
+
     return 0;
 }
