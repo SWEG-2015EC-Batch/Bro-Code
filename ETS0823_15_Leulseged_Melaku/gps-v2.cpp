@@ -3,17 +3,23 @@ using namespace std;
 int main(){
     float mid,fin;
     int counter = 1;
+    int error = 0;
     while(counter != 0){
+        if (error == 3){
+            break;
+        }
         cout<<"mid exam(40%) =>";
         cin>>mid;
         if (!(mid>=0 && mid<=40)){
             cout<<"mid exam should be between 0 and 40\n";
+            error +=1;
             continue;
         }else{
             cout<<"fianl exam(60%) =>";
             cin>>fin;
             if (!(fin>=0 && fin<=60)){
                 cout<<"final exam should be between 0 and 60\n";
+                error +=1;
                 continue;
             }else{
                 float total = mid + fin;
