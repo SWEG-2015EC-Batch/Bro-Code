@@ -2,10 +2,10 @@
 using namespace std;
 int main(){
     string weekend = "productive";
-    int n = 7;
-    string day[n] = {"firiday night","saturday morning","saturday afternoon","saturday evening","sunday morning","sunday afternoon","sunday evening"};
-    int percent[n]= {90,99,60,99,99,50,99};
+    string day[] = {"firiday night","saturday morning","saturday afternoon","saturday evening","sunday morning","sunday afternoon","sunday evening"};
+    int percent[]= {90,99,60,99,99,50,99};
     int sum = 0;
+    int n = size(percent);
 
     cout<<"I am leul and my weekend is "<<weekend<<" and my statuses are:\n";
     for (int i=0;i<n;i++){
