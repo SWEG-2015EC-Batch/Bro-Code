@@ -4,7 +4,7 @@ int main(){
 
     float ludis=2.67,*ptr;
 
-    ptr = 0;
+    ptr = &ludis;
 
     cout << "Address 1: " << &ludis << endl;
     cout << "Address 2: " << ptr << endl;
