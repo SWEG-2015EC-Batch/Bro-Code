@@ -2,7 +2,7 @@
 using namespace std;
 int main(){
 
-    float ludis=2.67,*ptr;
+    float ludis=2.67;*ptr;
 
     ptr = &ludis;
 
@@ -15,6 +15,8 @@ int main(){
 
     return 0;
 }
+
+// the data type of the pointer and the variable must be the same
 
 // * dereference opreator
 /*
