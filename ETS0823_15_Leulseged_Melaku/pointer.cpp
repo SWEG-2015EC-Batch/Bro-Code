@@ -2,7 +2,16 @@
 using namespace std;
 int main(){
 
-    float ludis,ptr;
+    float ludis=2.67,*ptr;
+
+    ptr = 0;
+
+    cout << "Address 1: " << &ludis << endl;
+    cout << "Address 2: " << ptr << endl;
+    cout << "Address 3: " << &ptr << endl;
+ 
+    cout << "Value 1: " << ludis << endl;
+    cout << "Value 2: " << *ptr << endl;
 
     return 0;
 }
