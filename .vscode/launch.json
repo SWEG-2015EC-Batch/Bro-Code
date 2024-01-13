@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/user/Desktop/Bro-Code",
-      "program": "c:/Users/user/Desktop/Bro-Code/build/Debug/outDebug",
+      "cwd": "c:/Users/user/Desktop/BroCode/Bro-Code",
+      "program": "c:/Users/user/Desktop/BroCode/Bro-Code/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
