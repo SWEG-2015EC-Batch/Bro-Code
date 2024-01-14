@@ -1,17 +1,18 @@
 // Design a program to find the frequency of characters within string and display character with  largest and smallest frequency respectively. 
 #include <iostream>
-#include <unordered_map>
+#include <climits>
 #include <cctype>
 
 using namespace std;
 
 int main() {
+    const int numChars = 128; // Assuming ASCII characters
     string inputString;
 
     cout << "Enter a string: ";
     getline(cin, inputString);
 
-    unordered_map<char, int> charFrequency;
+    int charFrequency[numChars] = {0};
 
     for (char character : inputString) {
         if (isalpha(character)) {
@@ -25,15 +26,19 @@ int main() {
     int maxFrequency = 0;
     int minFrequency = INT_MAX;
 
-    for (const auto& entry : charFrequency) {
-        if (entry.second > maxFrequency) {
-            maxFrequency = entry.second;
-            maxChar = entry.first;
-        }
+    for (int i = 0; i < numChars; ++i) {
+        if (charFrequency[i] > 0) {
+            char currentChar = static_cast<char>(i);
 
-        if (entry.second < minFrequency) {
-            minFrequency = entry.second;
-            minChar = entry.first;
+            if (charFrequency[i] > maxFrequency) {
+                maxFrequency = charFrequency[i];
+                maxChar = currentChar;
+            }
+
+            if (charFrequency[i] < minFrequency) {
+                minFrequency = charFrequency[i];
+                minChar = currentChar;
+            }
         }
     }
 
