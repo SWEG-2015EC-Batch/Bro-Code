@@ -1,4 +1,4 @@
-// Write a program to input eight integer numbers into an array named temp. As each number is input, add  the number into a total. After all numbers are input, display the number and their average. 
+// Write a C++ program that read and adds equivalent elements of the two-dimensional arrays named first  and second. The program should print the resulting data elements in table form. 
 #include<iostream>
 using namespace std;
 int main(){
