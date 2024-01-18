@@ -4,7 +4,7 @@
 using namespace std;
 
 int main() {
-   float arr[5] = {}
+   float arr[5] = {};
     
    
 
