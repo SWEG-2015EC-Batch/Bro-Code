@@ -2,31 +2,43 @@
 
 using namespace std;
 
+const int MAX_STUDENTS = 5; // You can change this to the desired number of students
+
 int main() {
-    const int numExams = 5;
-    int scores[numExams] = {85, 70, 60, 45, 30};
-    int totalMarks = 0;
+    int totalMarks[MAX_STUDENTS];
 
-   
-    for (int i = 0; i < numExams; ++i) {
-        totalMarks += scores[i];
+    // Input total marks for each student
+    cout << "Enter total marks for " << MAX_STUDENTS << " students:\n";
+    for (int i = 0; i < MAX_STUDENTS; ++i) {
+        cout << "Enter total marks for student " << (i + 1) << ": ";
+        cin >> totalMarks[i];
     }
 
-  
-    cout << "Total Marks: " << totalMarks << endl;
-    cout << "Score Level: ";
-    if (totalMarks >= 80) {
-        cout << "Excellent";
-    } else if (totalMarks >= 60) {
-        cout << "Very Good";
-    } else if (totalMarks >= 50) {
-        cout << "Fair";
-    } else if (totalMarks >= 40) {
-        cout << "Poor";
-    } else {
-        cout << "Fail";
+    // Print the result in tabular format
+    cout << "\nResult:\n";
+    cout << "-----------------------------------\n";
+    cout << "Student | Total Marks | Score Level\n";
+    cout << "-----------------------------------\n";
+
+    for (int i = 0; i < MAX_STUDENTS; ++i) {
+        string scoreLevel;
+
+        if (totalMarks[i] >= 80) {
+            scoreLevel = "Excellent";
+        } else if (totalMarks[i] >= 60) {
+            scoreLevel = "Very Good";
+        } else if (totalMarks[i] >= 50) {
+            scoreLevel = "Fair";
+        } else if (totalMarks[i] >= 40) {
+            scoreLevel = "Poor";
+        } else {
+            scoreLevel = "Fail";
+        }
+
+        cout << "   " << (i + 1) << "    |      " << totalMarks[i] << "     |     " << scoreLevel << "\n";
     }
-    cout << endl;
+
+    cout << "-----------------------------------\n";
 
     return 0;
 }
