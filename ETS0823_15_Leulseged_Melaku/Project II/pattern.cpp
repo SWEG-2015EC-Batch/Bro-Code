@@ -6,6 +6,8 @@ int main(){
     int n = 10;
     // max = n * 2 + 1
 
+
+    // top half
     for (int i = 0; i < n-1; i++){
         for (int j = n-2; j >= 0; j--){
             if (j <= i){
@@ -15,6 +17,11 @@ int main(){
 
 
         for (int j = n-2; j >= i; j--){
+            cout<<" ";
+        }
+
+
+        for (int j = n-3; j >= i; j--){
             cout<<" ";
         }
 
