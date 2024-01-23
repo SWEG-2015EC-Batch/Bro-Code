@@ -1,45 +1,51 @@
-#include<iostream>
+#include <iostream>
 
 using namespace std;
 
-int main(){
-    int elt,temp,count;
-    cout<<"how many elements -";
-    cin>>elt;
-    bool exist = false;
-    int array[elt][2] = {};
+int main()
+{
+    string name;
+    int size;
 
+    cout << "What is your name? - ";
+    getline(cin, name);
 
-     // 2 2 4 6 2 4 7 2 6
-    for (int i = 0; i < elt; i++){
-        cout<<"enter element "<<i+1<<" :";
-        cin>>temp;
+    cout << "How many elements? - ";
+    cin >> size;
 
-        for(int j = 0; j < elt; j++){
-            if (array[j][0] == temp && array[j][1] != 0){
-                array[j][1]++;
-                exist = true;
-            }
-            if (array[j][1] != 0){
-                count += 1;
-            }
-        }
-        if (exist == false){
-            array[count][0] = temp;
-            array[count][1] = 1;
-        }
+    int array1[size];
 
-
-        count = 0;
-        exist = false;
+    for (int i = 0; i < size; i++)
+    {
+        cout << "Enter numbers for the array " << i + 1 << " : ";
+        cin >> array1[i];
     }
 
-    
-    for (int i = 0; i < elt; i++){
-        if (array[i][1] != 0 && array[i][1] % 2 != 0){
-            cout<<array[i][0]<<" "<<array[i][1]<<endl;
+    cout << "Hello " << name << ". The elements that appear odd times are: ";
+
+    for (int i = 0; i < size; ++i)
+    {
+        bool isOddTimes = false;
+        int count = -1 ;
+
+        for (int j = 0; j < size; ++j)
+        {
+            if (i != j && array1[i] == array1[j])
+            {
+                count++;
+            }
+        }
+
+        if (count % 2 != 0)
+        {
+            isOddTimes = true;
+        }
+
+        if (isOddTimes)
+        {
+            cout << array1[i] << " ";
         }
     }
-    
+
     return 0;
 }
