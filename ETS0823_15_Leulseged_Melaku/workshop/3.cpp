@@ -36,7 +36,7 @@ int main(){
 
     
     for (int i = 0; i < elt; i++){
-        if (array[i][1] != 0){
+        if (array[i][1] != 0 && array[i][1] % 2 != 0){
             cout<<array[i][0]<<" "<<array[i][1]<<endl;
         }
     }
