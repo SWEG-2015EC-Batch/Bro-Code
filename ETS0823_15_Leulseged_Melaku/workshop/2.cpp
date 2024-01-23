@@ -35,16 +35,15 @@ int main(){
         cin>>array3[i];
     }
 
-    int array12[elt1] = {};
-
     for (int i = 0; i < elt1; i++){
-        for (int j = 0; j < elt1; j++){
-            if (array1[i] == array2[j]){
-                array12[i] = array1[i];
+        for (int j = 0; j < elt2; j++){
+            for(int k = 0; k < elt3; k++){
+                if (array1[i] == array2[j] && array1[i] == array3[k]){
+                    cout<<"common element "<<array1[i]<<endl;
+                }
             }
         }
     }
-    
 
     return 0;
 }
