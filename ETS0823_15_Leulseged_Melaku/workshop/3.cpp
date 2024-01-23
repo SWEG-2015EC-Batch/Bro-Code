@@ -7,7 +7,7 @@ int main(){
     cout<<"how many elements -";
     cin>>elt;
     bool exist = false;
-    int array[elt][2] = {{2,2}};
+    int array[elt][2] = {};
 
 
      // 2 2 4 6 2 4 7 2 6
@@ -16,7 +16,7 @@ int main(){
         cin>>temp;
 
         for(int j = 0; j < elt; j++){
-            if (array[j][0] == temp){
+            if (array[j][0] == temp && array[j][1] != 0){
                 array[j][1]++;
                 exist = true;
             }
@@ -36,7 +36,7 @@ int main(){
 
     
     for (int i = 0; i < elt; i++){
-        if (array[i][0] != 0 and array[i][1] != 0){
+        if (array[i][1] != 0){
             cout<<array[i][0]<<" "<<array[i][1]<<endl;
         }
     }
