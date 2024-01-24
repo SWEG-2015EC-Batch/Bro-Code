@@ -8,7 +8,7 @@ int main(){
     string str;
 
     cout<<"your name -";
-    cin>>str;
+    cin>>str; //lldusi
 
 
     bool exist = false;

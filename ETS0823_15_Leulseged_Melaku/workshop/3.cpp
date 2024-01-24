@@ -25,7 +25,7 @@ int main()
 
     for (int i = 0; i < size; ++i)
     {
-        bool isOddTimes = false;
+        bool isOddTimes = false;zzzz
         int count = -1 ;
 
         for (int j = 0; j < size; ++j)

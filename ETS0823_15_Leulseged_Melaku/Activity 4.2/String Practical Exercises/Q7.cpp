@@ -19,7 +19,6 @@ int main() {
         getline(cin, names[i]);
     }
 
-    // Sort names in alphabetical order using bubble sort
     for (int i = 0; i < numNames - 1; ++i) {
         for (int j = 0; j < numNames - i - 1; ++j) {
             if (names[j] > names[j + 1]) {
