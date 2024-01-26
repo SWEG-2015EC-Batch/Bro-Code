@@ -12,10 +12,10 @@ int main(){
 
 
     bool exist = false;
-    char array[size(str)] = {};
-    int array2[size(str)] = {};
+    char array[str.length()] = {};
+    int array2[str.length()] = {};
 
-    int s = size(str);
+    int s = str.length();
      // 2 2 4 6 2 4 7 2 6
      // lul
     for (int i = 0; i < s; i++){
