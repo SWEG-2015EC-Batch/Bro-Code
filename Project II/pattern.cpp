@@ -1,4 +1,4 @@
-// 
+// a program that excutes a given pattern by using the inserted numbers
 #include<iostream>
 using namespace std;
 int main(){
