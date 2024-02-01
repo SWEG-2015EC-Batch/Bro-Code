@@ -34,6 +34,13 @@ int main() {
 // cout<<Color(1);
 
 
+int a = 9, b = 7,c;
+
+c = b << a;
+
+cout<<c;
+
+// bitwise opreator
 
 
 return 0;
