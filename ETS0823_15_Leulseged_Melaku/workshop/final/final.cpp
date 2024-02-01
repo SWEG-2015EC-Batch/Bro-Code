@@ -1,8 +1,11 @@
-#include<iostream>
+#include <iostream>
+#define LU 'l'
 using namespace std;
-int main(){
-    int x=3,y = 2,z = 4;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
-    int a = y<<z;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
-    cout<<a;
-    return 0;
+int main() {
+ int a[100];
+
+ a[0] = 9;
+ cout<<a[0];
+
+return 0;
 }
