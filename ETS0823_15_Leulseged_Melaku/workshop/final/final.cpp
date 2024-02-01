@@ -1,9 +1,8 @@
 #include<iostream>
 using namespace std;
 int main(){
-    int x=3,y = 3;
-    if(x < 5 && x > 0){
-        cout<<"yes";
-    }
+    int x=3,y = 2,z = 4;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+    int a = y<<z;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+    cout<<a;
     return 0;
 }
