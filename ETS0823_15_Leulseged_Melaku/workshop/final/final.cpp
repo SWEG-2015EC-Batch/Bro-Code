@@ -33,14 +33,39 @@ int main() {
 // 
 // cout<<Color(1);
 
-
-int a = 9, b = 7,c;
-
-c = b << a;
-
-cout<<c;
+// 
+// int a = 9, b = 7,c;
+// 
+// c = b << a;
+// 
+// cout<<c;
 
 // bitwise opreator
+
+
+// int a = 9;
+// main:
+    // cout<<"Ludis";
+    // --a;
+    // if (a > 0) 
+        // goto main;
+
+
+// int myArray[2][2][2] ={
+    // {
+        // {1,2,},
+        // {3,4},
+    // },
+    // {
+        // {5,6},
+        // {7,8},
+    // },
+// };
+// 
+// cout<<myArray[0][1][0];
+
+// int const a = 9;
+// cout << a;
 
 
 return 0;
