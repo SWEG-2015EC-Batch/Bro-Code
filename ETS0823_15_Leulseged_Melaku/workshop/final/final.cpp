@@ -124,5 +124,18 @@ int main() {
 // cout<<++(*ptr)<<" "<<ptr<<endl;
 // cout<<(*ptr)++<<" "<<ptr<<endl;
 
+
+//  int const a(10);
+// a = 8;
+// cout<<a;
+
+// int arr[5];
+// cout<<"\nAddress of a[0]: "<<&arr[0];
+// cout<<"\nArray Name as pointer: "<<arr;
+// cout<<"\n\nAddress of a[1]: "<<&arr[1] <<"\t"<<(arr+1);
+// cout<<"\nAddress of a[4]: "<<&arr[4]<<"\t"<<(arr+4);
+// int *ptr = arr;
+// cout<<"\n\nAddress of array: "<<ptr;
+
 return 0;
 }
