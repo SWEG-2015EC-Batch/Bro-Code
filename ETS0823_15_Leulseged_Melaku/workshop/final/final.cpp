@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string.h>
 #define LU 'l'
 using namespace std;
 
@@ -67,6 +68,61 @@ int main() {
 // int const a = 9;
 // cout << a;
 
+// char a[3] = "uj";
+
+// cout<<a[0];
+
+// 
+// char str1[80] = "Ludis";
+// char str2[80] = "leul";
+// strcat(str1,str2);
+// 
+// cout<<strlen(str1);
+// cout<<str1;
+// cout<<str1>str2;
+// int num = 88, item = 100;
+// cout << "The address of a is: " << &num << endl;
+// cout << "The address of b is: " << &item << endl;
+// int *ptr = &item;
+// cout << "b" << " " << &item <<endl;
+// cout << "p" << " " << *ptr <<endl;
+
+
+// int value1 = 5, value2 = 15;
+// int *p1, *p2;
+// p1 = &value1;
+// p1 = address of value1
+// p2 = &value2;
+// p2 = address of value2
+// *p1 = 10;
+// value pointed to by p1=10
+// *p2 = *p1;
+// value pointed to by p2= value pointed to by p1
+// p1 = p2;
+
+// p1 = p2 (pointer value copied)
+// *p1 = 20;
+// value pointed to by p1 = 20
+// cout << "value1==" << value1 << "/ value2==" << value2<<endl;
+// cout << sizeof(p1) <<" "<< sizeof(*p1)<<" "<< sizeof(&p1) << endl;
+
+// int k = 4, *ptr = &k, **ptoptr = &ptr;
+// cout << "K = " << k << endl;
+// *ptr = k+10;
+// cout << "x = " << k << endl;
+// *ptoptr = 3;
+// cout << "k = " << k << endl;
+
+
+// int i = 5, j = 10, z = 7, *ptr = &i, **pptr = &ptr;
+// cout<<*ptr+4<<endl;
+// cout<<*ptr++<<" "<<*ptr<<endl;
+// cout<<*(ptr++)<<" "<<*ptr<<endl;
+// cout<<*++ptr<<" "<<ptr<<endl;
+// cout<<*(++ptr)<<" "<<ptr<<endl;
+// cout<<++*ptr<<" "<<ptr<<endl;
+// cout<<++(*ptr)<<" "<<ptr<<endl;
+// cout<<(*ptr)++<<" "<<ptr<<endl;
 
 return 0;
 }
