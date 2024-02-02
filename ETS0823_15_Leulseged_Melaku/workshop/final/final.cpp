@@ -157,5 +157,14 @@ int main() {
 // int a = 98585, *pa = &a;
 // cout<<sizeof(&pa);
 
+
+// int a[5] = {2,4,6,8,22};
+// int *p = &a[1];
+// cout << a[0] << " "<< p[0]<<endl;
+// 
+// for(int i = 0; i < 8; ++i)
+    // cout<<i<<" ";
+
+
 return 0;
 }
