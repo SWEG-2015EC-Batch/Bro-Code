@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cstring>
+#include <cmath>
 #define LU 'l'
 using namespace std;
 
@@ -180,7 +181,28 @@ int main() {
 // cout<<Arr1<<" "<<&Arr1<< endl;
 // cout<<ptr1<<" "<<&ptr1<<endl;
 
-string a = "ludis";
-cout<<a.length();
+// string a = "ludis";
+// cout<<a.length();
+
+// cout<<ln(1000);
+
+// int i = 3, j = 8;
+// 
+// int k = i > j?j:i;
+// cout<<k;
+
+// int a = 10;
+// if (a < 15)
+// {
+    // time:
+        // cout << a;
+        // a++;
+        // if(a < 40)
+            // goto time;
+// }
+// break;
+
+
+cout<<6%4*5;
 return 0;
 }
