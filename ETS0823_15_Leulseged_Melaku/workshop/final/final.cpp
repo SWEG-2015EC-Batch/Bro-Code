@@ -153,6 +153,9 @@ int main() {
     // }
     // cout<<endl;
 // }
+// 
+// int a = 98585, *pa = &a;
+// cout<<sizeof(&pa);
 
 return 0;
 }
