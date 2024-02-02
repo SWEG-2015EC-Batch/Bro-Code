@@ -179,5 +179,8 @@ int main() {
 // cout<<ptr2<<" "<<&ptr2<<endl;
 // cout<<Arr1<<" "<<&Arr1<< endl;
 // cout<<ptr1<<" "<<&ptr1<<endl;
+
+string a = "ludis";
+cout<<a.length();
 return 0;
 }
