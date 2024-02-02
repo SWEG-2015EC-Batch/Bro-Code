@@ -166,5 +166,11 @@ int main() {
     // cout<<i<<" ";
 
 
+// int a = 58, *p = &a;
+// int **q = &p;
+// int ***r = &q;
+// cout<<***r;
+// 
+
 return 0;
 }
