@@ -1,5 +1,5 @@
 #include <iostream>
-#include <string.h>
+#include <cstring>
 #define LU 'l'
 using namespace std;
 
@@ -171,6 +171,13 @@ int main() {
 // int ***r = &q;
 // cout<<***r;
 // 
-
+// int V;
+// int *ptr2 = &V;
+// int Arr1[5],
+// *ptr1 = &(Arr1[2]);
+// cout<<V<<" "<<&V<< endl;
+// cout<<ptr2<<" "<<&ptr2<<endl;
+// cout<<Arr1<<" "<<&Arr1<< endl;
+// cout<<ptr1<<" "<<&ptr1<<endl;
 return 0;
 }
