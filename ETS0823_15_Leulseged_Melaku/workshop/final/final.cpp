@@ -137,5 +137,22 @@ int main() {
 // int *ptr = arr;
 // cout<<"\n\nAddress of array: "<<ptr;
 
+float mark[3][5] = {{10,11,12,13,14},{20,21,22,23,24},
+{30,31,32,33,34}};
+float *ptr = mark[0];
+ptr +=2;
+*ptr *= 2;
+ptr = *(mark+1)+3;
+*ptr += 7.0;
+ptr += 4;
+*ptr += 8.0;
+
+for (int i = 0; i < 3; ++i){
+    for (int j = 0; j < 5; ++j){
+        cout<<*(*(mark + i) + j)<<" ";
+    }
+    cout<<endl;
+}
+
 return 0;
 }
